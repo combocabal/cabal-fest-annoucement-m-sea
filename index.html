@@ -135,8 +135,12 @@ td:first-child{text-align:center;font-family:'JetBrains Mono',monospace;font-siz
   .fbtn{flex:1;text-align:center;}
   .search-wrap{width:100%;margin-left:0;}
   .search-wrap input{width:100%;}
-  th:nth-child(5),td:nth-child(5),th:nth-child(2),td:nth-child(2){display:none;}
-  td,th{padding:10px 10px;font-size:13px;}
+  /* mobile: hide Name + AID, keep Username/Region/Redeem */
+  th:nth-child(2),td:nth-child(2),
+  th:nth-child(5),td:nth-child(5){display:none;}
+  td,th{padding:10px 8px;font-size:13px;}
+  .tbl-wrap{overflow-x:auto;}
+  .lnk{font-size:12px;padding:6px 10px;}
   .fb-btn{min-width:100%;flex:unset;}
   .fb-label{margin-bottom:10px;}
 }
